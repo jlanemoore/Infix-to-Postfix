@@ -73,7 +73,7 @@ void expression::convertToPostfix() {
 		case '(':
 			st.push(ifix[i]);
 			break;
-		case')':
+		case ')':
 			while (st.top() != '(') {
 				pfix += st.top();
 				st.pop();
